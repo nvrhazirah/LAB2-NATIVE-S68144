@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Layout Type"
+        android:textStyle="italic"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9DC209"
+        android:text="Linear Layout"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/relativeLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9DC209"
+        android:text="Relative Layout"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/constraintLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9DC209"
+        android:text="Constraint Layout"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/gridLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9DC209"
+        android:text="Grid Layout"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/pantai1">
+
+    <!-- Main centered TextView -->
+    <TextView
+        android:id="@+id/relativeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Relative Layout"
+        android:textSize="24sp"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="This text describes the purpose of the Relative Layout"/>
+
+    <!-- Description TextView that is visually displayed below the main text -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terengganu, a state on the east coast of Malaysia, is renowned for its pristine beaches and crystal-clear waters. The coastline stretches for miles, offering stunning views and tranquil retreats, making it a popular destination for beach lovers and nature enthusiasts alike. What makes Terengganu’s beaches truly unique is not only their beauty but also the rich cultural heritage, such as the traditional Malay boat-building craftsmanship seen along the coast and the famous turtle conservation efforts on its shores."
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_below="@id/relativeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:backgroundTint="#9DC209"
+        android:textColor="#FFFFFF"
+        android:onClick="finishActivity"
+        android:layout_below="@id/descriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Go Back Button"/>
+
+</RelativeLayout>

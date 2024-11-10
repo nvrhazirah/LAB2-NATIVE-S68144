@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#00E5FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Linear Layout"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#3F51B5"
+        android:layout_marginBottom="16dp"/>
+    <!-- Container to stack images vertically -->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="100"
+            android:src="@drawable/bukit" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="100"
+            android:src="@drawable/penyu" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:backgroundTint="#9DC209"
+        android:textColor="#FFFFFF"
+        android:onClick="finish"/>
+</LinearLayout>

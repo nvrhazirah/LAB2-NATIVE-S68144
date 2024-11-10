@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"> <!-- Light gray background -->
+
+    <!-- Main centered TextView -->
+    <TextView
+        android:id="@+id/constraintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Constraint Layout"
+        android:textSize="24sp"
+        android:textColor="#3F51B5"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"
+    android:padding="12dp"
+    android:background="@drawable/rounded" />
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter some text"
+        android:textSize="18sp"
+        android:background="@drawable/rounded"
+    android:padding="12dp"
+    android:layout_marginTop="24dp"
+    app:layout_constraintTop_toBottomOf="@id/constraintText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:inputType="text"/>
+
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textColor="#FFFFFF"
+    android:textSize="18sp"
+        android:backgroundTint="#9DC209"
+    android:layout_marginTop="24dp"
+    android:padding="12dp"
+    android:layout_marginBottom="32dp"
+    app:layout_constraintTop_toBottomOf="@id/editTextInput"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
